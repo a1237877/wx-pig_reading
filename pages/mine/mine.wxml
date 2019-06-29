@@ -1,0 +1,75 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+    <view class="editor" bindtap="editor">编辑</view>
+  </view>
+  <view class="page_hd-bt flex">
+    <view class="page-bt-left">
+      <view class="page-left-readtime">{{readhour}}小时{{readminute}}分钟</view>
+      <view class="page-left-content">读书时长</view>
+    </view>
+    <view class="cline">|</view>
+    <view class="page-bt-right">
+      <view class="page-right-numbers">{{numbers}}</view>
+      <view class="page-right-items">蜗牛壳</view>
+    </view>
+    <view class="page-icon">></view>
+  </view>
+  <view class="page_bd-bt flex" bindtap="toNews">
+    <view class="page-left">
+      <image src="../../assets/images/mines/news.png" />
+    </view>
+    <view class="page-right">我的消息</view>
+    <view class="page-toicon">></view>
+  </view>
+
+  <view class="page_bd-bt flex" bindtap="toNews">
+    <view class="page-left">
+      <image src="../../assets/images/mines/booklist.png" />
+    </view>
+    <view class="page-right">我的书单-书评</view>
+    <view class="page-toicon">写书评 ></view>
+  </view>
+  <view class="page_bd-bt flex" bindtap="toNews">
+    <view class="page-left">
+      <image src="../../assets/images/mines/note.png" />
+    </view>
+    <view class="page-right">我的笔记</view>
+    <view class="page-toicon">8 ></view>
+  </view>
+  <view class="page_bd-bt flex" bindtap="toNews">
+    <view class="page-left">
+      <image src="../../assets/images/mines/fans.png" />
+    </view>
+    <view class="page-right">关注-粉丝</view>
+    <view class="page-toicon">></view>
+  </view>
+  <view class="page_bd-bt flex" bindtap="toNews">
+    <view class="page-left">
+      <image src="../../assets/images/mines/times.png" />
+    </view>
+    <view class="page-right">购买时长</view>
+    <view class="page-toicon">></view>
+  </view>
+  <view class="page_bd-bt flex" bindtap="toNews">
+    <view class="page-left">
+      <image src="../../assets/images/mines/update.png" />
+    </view>
+    <view class="page-right">更新续订</view>
+    <view class="page-toicon">点我找回阅读时长 ></view>
+  </view>
+
+  <view class="page_bd-bt flex" bindtap="toNews">
+    <view class="page-left">
+      <image src="../../assets/images/mines/sets.png" />
+    </view>
+    <view class="page-right">设置</view>
+    <view class="page-toicon">></view>
+  </view>
+  
+</view>

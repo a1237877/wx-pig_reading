@@ -1,0 +1,40 @@
+<view class="container">
+  
+  <view class="page_hd">
+    <view class="page_hd-title center">猪仔领读</view>
+  </view>
+  <view class=" searchBar">
+    <view class="searBar-box {{isTap?'tap':''}}">
+      <image src="../../assets/images/search.png" mode="aspectFill" class="search-icon" />
+      <input type="text" name="searchBar" disabled="true" placeholder="想看什么" placeholder-class="search-plac" bindtap="toSearch" />
+    </view>
+  </view>
+  <scroll-view class="page_bd" wx:for="{{authors}}" wx:key="{{index}}" scroll-y="{{true}}">
+    <navigator url="authors/authors?id={{index}}">
+      <view class="page_bd-head">
+        <view class="head-img">
+          <image class="pic" src="{{item.headImg}}" mode="aspectFill" />
+        </view>
+        <view class="author flex">{{item.userName}}</view>
+      </view>
+    </navigator>
+    <navigator url="stories/stories?id={{index}}">
+      <view class="page_bd-banner center">
+        <image class="banner-img" src="{{item.bannerImg}}" mode="aspectFill" />
+      </view>
+      <view class="page_bd-middle">
+        <view class="title">{{item.articTitle}}</view>
+        <view class="content">{{item.articContent}}</view>
+      </view>
+      <view class="page_bd-foot">
+        <view class="foot-left flex">{{item.clickTimes}}次点击</view>
+        <view class="foot-right up">
+          {{item.thumbUp}}
+          <view class="icon">
+            <image src="../../assets/images/pointer.png" mode="aspectFill" />
+          </view>
+        </view>
+      </view>
+    </navigator>
+  </scroll-view>
+</view>

@@ -1,0 +1,84 @@
+/* pages/mine/mine.wxss */
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+.editor{
+  position: absolute;
+  top: 10rpx;
+  right: 40rpx;
+  color: #C2B282;
+}
+.page_hd-bt{
+  margin-top: 60rpx;
+}
+.flex{
+  display: flex;
+  align-items: center;
+}
+.cline{
+  margin-left: 80rpx;
+  color: #999;
+}
+.page-bt-left,.page-bt-right{
+  width: 375rpx;
+}
+.page-left-content,.page-right-items{
+  font-size: 24rpx;
+  color: #b3b3b3;
+  text-align: center;
+  margin-left: 60rpx;
+}
+.page-left-readtime,.page-right-numbers{
+  font-size: 34rpx;
+  color: #444444;
+  text-align: center;
+  margin-left: 60rpx;
+}
+.page-icon{
+  font-size: 34rpx;
+  color: #b3b3b3;
+  margin-right: 28rpx;
+}
+.page_hd-bt:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 400rpx;
+  border-top: 10px solid #f6f6f6;
+}
+
+.page_bd-bt{
+  margin-top: 60rpx;
+}
+.page-left{
+  margin-left: 34rpx;
+  margin-top: 6rpx;
+  margin-right: 30rpx;
+}
+.page-left image{
+  width: 40rpx;
+  height: 40rpx;
+
+}
+.page-toicon{
+  position: absolute;
+  right: 30rpx;
+  text-align: right;
+  color: #b3b3b3;
+  font-size: 34rpx;
+}

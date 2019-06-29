@@ -1,0 +1,9 @@
+<view class="container">
+  <view wx:for="{{authorInfo}}" wx:key="{{index}}">
+    <view class="page_hd">
+      <view class="page_hd-title">
+        {{item.articTitle}}
+      </view>
+    </view>
+  </view>
+</view>

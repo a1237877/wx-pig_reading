@@ -1,0 +1,59 @@
+<view class="container">
+  <view class="page_hd">
+    <view class="page_hd-min">60</view>
+    <text class="page_hd-minute">分钟</text>
+    <view class="page_hd-icon">
+      <image src="../../assets/images/xiala.png" class="icon" />
+    </view>
+    <view class="page_hd-desk">
+      <image class="desk" src="../../assets/images/desk.png"  />
+    </view>
+  </view>
+  <swiper class="swiper" indicator-dots="{{true}}" autoplay="{{true}}" interval="5000" duration="1000">
+    <swiper-item>
+      <view class="page_bd">
+        <view class="page_hd-img">
+          <image src="../../assets/images/book1.png" bindtap="tobuy"/>
+        </view>
+        <view class="page_hd-desc">
+          <view class="title">南风知我意</view>
+          <view class="items">
+            <view class="people">1123人在读</view>
+            <image src="../../assets/images/rg.png" />
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+
+    <swiper-item>
+       <view class="page_bd">
+        <view class="page_hd-img">
+          <image src="../../assets/images/book2.png" />
+        </view>
+        <view class="page_hd-desc">
+          <view class="title">人工智能</view>
+          <view class="items">
+            <view class="people">2343人在读</view>
+            <image src="../../assets/images/rg.png" />
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+     
+    <swiper-item>
+      <view class="page_bd">
+        <view class="page_hd-img">
+          <image src="../../assets/images/book3.png" />
+        </view>
+        <view class="page_hd-desc">
+          <view class="title">编写高质量代码</view>
+          <view class="items">
+            <view class="people">112人在读</view>
+            <image src="../../assets/images/rg.png" />
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+      
+  </swiper>
+</view>

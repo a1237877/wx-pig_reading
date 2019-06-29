@@ -1,0 +1,42 @@
+/* pages/stack/stack.wxss */
+.stack-view{
+  height: 160rpx;
+  padding: 10rpx 20rpx;
+  display: block;
+  
+}
+.img{
+  width: 156rpx;
+  height: 116rpx;
+  float: left;
+  margin-top: 20rpx;
+  border-radius: 5%;
+}
+.line{
+  border-top: 1px solid #f0f0f0;
+}
+.name{
+  font-size: 40rpx;
+  color: #222222;
+  position: absolute;
+  left: 30%;
+  top: 30%;
+}
+.number{
+  position: absolute;
+  right: 8%;
+  top: 40%;
+  margin-right: 20rpx;
+  font-size: 24rpx;
+  color: #9c9c9c;
+  
+}
+.arrow{
+  position: relative;
+  float: right;
+  color: #9c9c9c;
+  font-size: 24rpx;
+  margin-right: 20rpx;
+  height: 160rpx;
+  line-height: 160rpx;
+}

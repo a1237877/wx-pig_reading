@@ -1,0 +1,79 @@
+/* pages/bookdesk/bookdesk.wxss */
+.page_hd{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page_hd-min{
+  font-size: 38rpx;
+  color: #444444;
+  font-family: bold;
+  line-height: 38rpx;
+}
+.page_hd-minute{
+  font-size: 24rpx;
+  color: #b3b3b3;
+  margin-left: 14rpx;
+}
+.page_hd-icon{
+  margin-left: 10rpx;
+  margin-top: -16rpx;
+}
+.page_hd-icon image{
+  width: 18rpx;
+  height: 18rpx;
+}
+.page_hd-desk image{
+  position: absolute;
+  width: 60rpx;
+  height: 60rpx;
+  margin-top: -32rpx;
+  margin-left: 232rpx;
+}
+.page_bd{
+  position: relative;
+}
+.swiper{
+  margin-left: 168rpx;
+  width: 416rpx;
+  height: 960rpx;
+}
+.page_hd-img image{
+  margin-top: 116rpx;
+  width: 416rpx;
+  height: 582rpx;
+  border-radius: 8rpx
+}
+.title{
+  margin-top: 80rpx;
+  font-size: 38rpx;
+  color: #444;
+  font-weight: bold;
+  text-align: center;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  
+  
+  display:-webkit-box; 
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:1; 
+}
+.items {
+  margin-top: 19rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.people{
+  margin-left: 31rpx;
+}
+.items>view {
+  font-size: 26rpx;
+  color: #B3B3B3;
+}
+.items image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 16rpx;
+}
