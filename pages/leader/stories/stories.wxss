@@ -1,1 +1,165 @@
 /* pages/leader/stories/stories.wxss */
+.page_hd{
+  width: 750rpx;
+  border-top: 1px solid #f0f0f0;
+}
+.page_hd-title{
+  font-size: 44rpx;
+  color: #444444;
+  margin-left: 36rpx;
+  margin-top: 46rpx;
+  margin-bottom: 42rpx;
+  font-weight: bold;
+}
+.page_hd-author{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page_hd-author image{
+  width: 72rpx;
+  height: 72rpx;
+  margin-left: 36rpx;
+  border-radius: 50%;
+  margin-right: 26rpx;
+}
+.page_hd-author .name{
+  width: 446rpx;font-size: 28rpx;
+  color: #575757;
+  margin-right: 20rpx;
+}
+.page_hd-author .desc{
+  font-size: 28rpx;
+  color: #c8c8c8;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.page_hd-author .follow{
+  font-size: 28rpx;
+  border: solid 1rpx #f0f0f0;
+  border-radius: 45rpx;
+  padding: 12rpx 26rpx;
+  color: #7d7d7d;
+}
+.recommend{
+  font-size: 34rpx;
+  font-weight: bold;
+  margin-top: 50rpx;
+  border-bottom: 1px solid #f0f0f0;
+  padding-left:  40rpx;
+}
+.page_bd{
+  padding: 30rpx 40rpx;
+  background: #ffffff;
+}
+.page_bd text{
+  font-size: 32rpx;
+  color: #454545;
+  line-height: 44rpx;
+}
+.page_bd image{
+  width: 100%;
+  margin: 20rpx 0;
+}
+.page-book{
+  position: relative;
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-book image{
+  width: 174rpx;
+  height: 232rpx;
+  margin: 110rpx 32rpx 24rpx -220rpx;
+  border-radius: 8rpx;
+}
+.page-book .info{
+  font-size: 34rpx;color: #444444;
+  font-weight: bold;
+  margin-top: 24rpx;
+}
+.info .author{
+  font-size: 24rpx;
+  color: #959595;
+  margin-top: 28rpx;
+}
+.author .readers{
+  margin-top: 36rpx;
+  font-size: 20rpx;
+  color: #bcbcbc;
+}
+.startReading{
+  position: absolute;
+  right: 30rpx;
+  top: 43%;
+  font-size: 32rpx;
+  padding: 20rpx 24rpx;
+  color: #d5caa8;
+  border: solid 1rpx #d5caa8;
+  border-radius: 45rpx;
+
+}
+.page-desc{
+  padding: 30rpx 40rpx;
+  border-top: 1px solid #f0f0f0;
+}
+.updateTime{
+  font-size: 32rpx;
+  color: #bcbcbc;
+}
+.page-desc text{
+  margin-top: -53rpx;
+  float: right;
+  font-size: 32rpx;
+  color: #bcbcbc;
+}
+.thumb{
+  position: relative;
+  margin-bottom: 5rpx;
+  background: #f66350;
+  border-radius: 80rpx;
+  margin-top: 50rpx;
+  margin-left: 229rpx;
+  margin-right: 181rpx;
+  height: 140rpx;
+}
+.thumb image{
+  position: absolute;
+  width: 48rpx;
+  height: 48rpx;
+ top: 30%;left: 15%;
+
+}
+.page_bt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  height: 70rpx;
+  border-top: solid 1px #ebebeb;
+  background: #ffffff;
+  width: 670rpx;
+  padding: 20rpx 40rpx;    
+}
+.bottom-items image{
+  margin: 28rpx 72rpx 28rpx 72rpx;
+  width: 86rpx;
+  height: 86rpx;
+  display: block;
+}
+.blank{
+  height: 120rpx;
+}
+.text{
+  color: #fee8e5;  
+  font-size: 30rpx;
+  position: absolute;
+  left: 28%;
+  top: 30%;
+}
+.isdisliked{
+  background-color: #f66350;
+}

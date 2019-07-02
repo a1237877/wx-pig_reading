@@ -13,7 +13,7 @@
     <swiper-item>
       <view class="page_bd">
         <view class="page_hd-img">
-          <image src="../../assets/images/book1.png" bindtap="tobuy"/>
+          <image src="../../assets/images/book1.png"/>
         </view>
         <view class="page_hd-desc">
           <view class="title">南风知我意</view>
@@ -56,4 +56,7 @@
     </swiper-item>
       
   </swiper>
+  <view class="goIntoStore" bindtap="goIntoStore">
+    <text class="go">点击进入书城</text>
+  </view>
 </view>

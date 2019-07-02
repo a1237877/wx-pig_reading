@@ -4,6 +4,58 @@
       <view class="page_hd-title">
         {{item.articTitle}}
       </view>
+      <view class="page_hd-author">
+        <image src="{{item.headImg}}" />
+        <view class="name">{{item.userName}}
+          <view class="desc">{{item.authorDes}}</view>
+        </view>
+    
+        <view class="follow" bindtap="follow" isfollow="true">{{msg}}</view>
+      </view>
     </view>
   </view>
+
+  <view wx:for="{{article}}" wx:key="{{index}}">
+    <view class="page_bd">
+      <text>{{item.text1}}</text>
+      <image src="{{item.image1}}" />
+      <text>{{item.text2}}</text>
+      <image src="{{item.image2}}" />
+    </view>
+
+    <view class="recommend">书籍推荐</view>
+    <view class="page-book">
+      <view class="bookimg">
+        <image src="{{item.bookCover}}" />
+      </view>
+      <view class="info">{{item.bookName}}
+        <view class="author">{{item.bookAuthor}}
+          <view class="readers">{{item.readerNum}}人在读 ></view>
+        </view>
+      </view>
+      <view class="startReading">开始阅读</view>
+    </view>
+
+    <view class="page-desc">
+      <view class="updateTime">更新于{{item.updateTime}}</view>
+      <text>举报</text>
+    </view>
+
+    <view class="thumb">
+      <image src="../../../assets/images/thumb.png" />
+      <span class="text">用生命去点赞</span>
+    </view>
+  </view>
+  <view class="page_bt">
+    <view class="bottom-items">
+        <image src="../../../assets/images/share.png" />
+    </view>
+    <view class="bottom-items" bindtap="like">
+        <image src="{{src}}" />
+    </view>
+    <view class="bottom-items">
+        <image src="../../../assets/images/news.png" />
+    </view>
+  </view>
+  <view class="blank"></view>
 </view>

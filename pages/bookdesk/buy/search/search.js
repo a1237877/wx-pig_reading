@@ -1,4 +1,4 @@
-// pages/bookdesk/bookdesk.js
+// pages/bookdesk/buy/search/search.js
 Page({
 
   /**
@@ -13,12 +13,6 @@ Page({
    */
   onLoad: function (options) {
 
-  },
-  
-  goIntoStore:function(e){
-    wx.navigateTo({
-      url:'buy/buy'
-    })
   },
 
   /**

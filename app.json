@@ -9,7 +9,9 @@
     "pages/mine/author/author",
     "pages/mine/editor/editor",
     "pages/mine/news/news",
+    "pages/bookdesk/buy/search/search",
     "pages/bookdesk/buy/buy"
+
   ],
   "window": {
     "backgroundTextStyle": "light",

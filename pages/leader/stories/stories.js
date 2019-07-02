@@ -7,7 +7,11 @@ Page({
   data: {
     authorInfo:[],
     article:[],
-    index:[]
+    index:[],
+    msg:'关注',
+    isfollow:true,
+    src:'../../../assets/images/like.png', 
+  
   },
 
   /**
@@ -26,6 +30,31 @@ Page({
         })
       }
     })
+  },
+  like(){
+    
+   
+      this.setData({
+        src:'../../../assets/images/like2.png',
+       
+      })
+   
+    
+  },
+  
+  follow(){
+    var isfollow = this.data.isfollow
+    if(isfollow){
+      this.setData({
+        msg:'取消',
+        isfollow:false
+      })
+    }else{
+      this.setData({
+        msg:'关注'
+      })
+    }
+   
   },
 
   /**

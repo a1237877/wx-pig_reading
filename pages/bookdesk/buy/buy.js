@@ -5,14 +5,40 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    isTap:false,
+    indicator_dots:true,
+    autoplay:true,
+    interval:2000,
+    duration:1000,
+    index_slides:[],
+    nav_data:[],
+    section:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var that = this;
+    wx.request({
+      url:'https://www.easy-mock.com/mock/5ca466ee13e4cf68f04a4308/wzx',
+      success:function(res){
+        
+        that.setData({
+          index_slides:res.data.data.index_slides,
+          nav_data:res.data.data.nav_data,
+          section:res.data.data.section
+        })
+      }
+    })
+  },
+  toSearch(e){
+    this.setData({
+      isTap:true
+    });
+    wx.navigateTo({
+      url: "search/search"
+    })
   },
 
   /**
