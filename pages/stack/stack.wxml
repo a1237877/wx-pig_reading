@@ -8,5 +8,5 @@
       <text class="arrow">></text>
     </navigator>
     <view class="line"></view>
-  </scroll-view>
+  </scroll-view> 
 </view>

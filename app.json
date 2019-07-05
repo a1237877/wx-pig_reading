@@ -10,8 +10,9 @@
     "pages/mine/editor/editor",
     "pages/mine/news/news",
     "pages/bookdesk/buy/search/search",
-    "pages/bookdesk/buy/buy"
-
+    "pages/bookdesk/buy/buy",
+    "pages/stack/booklist/booklist",
+    "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",
